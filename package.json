@@ -1,0 +1,32 @@
+{
+  "name": "lion-of-resistance",
+  "version": "1.0.0",
+  "description": "A 2D platformer game about Palestinian resistance",
+  "main": "src/index.js",
+  "homepage": "https://[your-username].github.io/lion-of-resistance",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /lion-of-resistance/",
+    "clean": "rm -rf dist .cache .parcel-cache",
+    "prebuild": "npm run clean",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "phaser": "^3.70.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "@babel/core": "^7.23.7",
+    "@babel/preset-env": "^7.23.7",
+    "gh-pages": "^6.1.1"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "> 0.5%"
+  ],
+  "author": "Osama Al-Najjar (Abu Hamza)",
+  "license": "UNLICENSED",
+  "private": true
+} 
